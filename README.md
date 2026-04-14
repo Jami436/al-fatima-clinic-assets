@@ -6,8 +6,6 @@ This is a professional, responsive landing page built with **Next.js 15** and **
 
 **Live Demo:** Run `npm run dev` and open http://localhost:3000
 
-![Screenshot](https://via.placeholder.com/1200x600/0056b3/ffffff?text=Al+Fatima+Clinic+Landing+Page) <!-- Replace with actual screenshot -->
-
 ## ✨ Key Features (As Per Design Requirements)
 
 ### ✅ Navigation
@@ -110,6 +108,4 @@ Open: 24/7
 ---
 
 **Ready for Production!** Contact developers for CMS integration, booking forms, or specialist pages.
-
-*Built by BLACKBOXAI - Senior Frontend Developer*
 
