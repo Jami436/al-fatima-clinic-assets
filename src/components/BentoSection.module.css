@@ -1,0 +1,278 @@
+.bentoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+@media (min-width: 768px) {
+  .bentoGrid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+/* Location Card */
+.locationCard {
+  background-color: var(--surface-container-lowest);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background-color 0.3s;
+}
+.locationCard:hover {
+  background-color: var(--primary-fixed);
+}
+@media (min-width: 768px) {
+  .locationCard {
+    grid-column: span 8 / span 8;
+  }
+}
+
+.locationHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.locationIcon {
+  color: var(--primary);
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.locationTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.locationText {
+  color: var(--on-surface-variant);
+  font-size: 1.125rem;
+}
+
+.locationMapThumb {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .locationMapThumb {
+    display: block;
+  }
+}
+
+.mapThumbImg {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.locationCard:hover .mapThumbImg {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.locationMapFull {
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 12rem;
+  width: 100%;
+}
+
+.mapFullWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: var(--surface-container-high);
+  position: relative;
+}
+
+.mapPlaceholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--outline-variant);
+  font-weight: 700;
+  font-size: 2.25rem;
+  opacity: 0.1;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.mapFullImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+/* Contact Card */
+.contactCard {
+  background-color: var(--primary);
+  color: var(--on-primary);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .contactCard {
+    grid-column: span 4 / span 4;
+  }
+}
+
+.contactIcon {
+  font-size: 3.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--on-primary-container);
+}
+
+.contactTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.phoneList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.phoneNumber {
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.divider {
+  height: 1px;
+  width: 3rem;
+  background-color: rgba(200, 218, 255, 0.3);
+  margin: 0 auto;
+}
+
+.availability {
+  margin-top: 2rem;
+  color: var(--on-primary-container);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
+
+/* Services Container */
+.servicesSection {
+  background-color: var(--surface-container-lowest);
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+}
+@media (min-width: 768px) {
+  .servicesSection {
+    grid-column: span 12 / span 12;
+  }
+}
+
+.servicesHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+  gap: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .servicesHeader {
+    flex-direction: row;
+  }
+}
+
+.servicesTitleBox {
+  width: 100%;
+}
+
+.servicesTitle {
+  font-size: 1.875rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.servicesDesc {
+  color: var(--on-surface-variant);
+  font-size: 1.125rem;
+}
+
+.servicesWatermark {
+  display: none;
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  .servicesWatermark {
+    display: block;
+  }
+}
+
+.watermarkText {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 3.75rem;
+  opacity: 0.05;
+}
+
+/* Services Grid */
+.servicesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 640px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.serviceCard {
+  padding: 2rem;
+  border-radius: 0.75rem;
+  background-color: var(--surface-container-low);
+  transition: all 0.3s;
+}
+.serviceCard:hover {
+  background-color: var(--surface-container);
+}
+
+.serviceIcon {
+  color: var(--primary);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  display: block;
+  transition: transform 0.3s;
+}
+.serviceCard:hover .serviceIcon {
+  transform: scale(1.1);
+}
+
+.serviceTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.serviceDesc {
+  color: var(--on-surface-variant);
+  font-size: 0.875rem;
+  line-height: 1.625;
+}

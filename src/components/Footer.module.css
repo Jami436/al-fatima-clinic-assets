@@ -1,0 +1,57 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid var(--outline-variant);
+  background-color: var(--surface-container-high);
+  margin-top: 4rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.brandIcon {
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+.brandName {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1.125rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.linkItem {
+  color: var(--on-surface-variant);
+  font-size: 0.75rem;
+  letter-spacing: 0.025em;
+  opacity: 0.8;
+  transition: all 0.2s;
+}
+.linkItem:hover {
+  opacity: 1;
+  color: var(--primary);
+}
+
+.copyright {
+  color: var(--on-surface-variant);
+  font-size: 0.75rem;
+  letter-spacing: 0.025em;
+}

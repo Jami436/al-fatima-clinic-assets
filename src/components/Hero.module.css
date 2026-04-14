@@ -1,0 +1,133 @@
+.heroSection {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .heroSection {
+    text-align: left;
+  }
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  .heroContent {
+    flex-direction: row;
+  }
+}
+
+.textContent {
+  max-width: 42rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .title {
+    font-size: 4.5rem;
+  }
+}
+
+.titleHighlight {
+  color: var(--primary);
+  display: block;
+}
+@media (min-width: 1024px) {
+  .titleHighlight {
+    display: inline;
+  }
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--on-surface-variant);
+  max-width: 32rem;
+  margin-bottom: 2rem;
+  line-height: 1.625;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1024px) {
+  .subtitle {
+    margin-left: 0;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  .actions {
+    justify-content: flex-start;
+  }
+}
+
+.primaryButton {
+  background: linear-gradient(to right, var(--primary), var(--primary-container));
+  color: var(--on-primary);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.primaryButton:hover {
+  opacity: 0.9;
+}
+
+.secondaryButton {
+  background-color: var(--surface-container-high);
+  color: var(--on-secondary-fixed-variant);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.secondaryButton:hover {
+  background-color: var(--surface-container-highest);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 32rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+@media (min-width: 1024px) {
+  .imageWrapper {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 71, 141, 0.2), transparent);
+}
