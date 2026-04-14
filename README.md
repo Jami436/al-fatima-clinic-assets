@@ -107,5 +107,3 @@ Open: 24/7
 
 ---
 
-**Ready for Production!** Contact developers for CMS integration, booking forms, or specialist pages.
-
